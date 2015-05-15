@@ -3,6 +3,13 @@ MAINTAINER Ross Kukulinski "ross@getyodlr.com"
 
 ENV LAST_UPDATED 5_12_2015
 
+RUN apt-get -qq update && \
+    apt-get -qq install -y \
+        curl \
+        wget \
+        git \
+        supervisor
+
 RUN npm -g install npm && \
     npm -g install \
         bower \

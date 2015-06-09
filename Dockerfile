@@ -1,7 +1,7 @@
-FROM iojs:2.0
+FROM iojs:2.2
 MAINTAINER Ross Kukulinski "ross@getyodlr.com"
 
-ENV LAST_UPDATED 5_12_2015
+ENV LAST_UPDATED 6_9_2015
 
 RUN apt-get -qq update && \
     apt-get -qq install -y \
